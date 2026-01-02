@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
+    <title>CV Vyskrebtsov</title>
 
     <link
       rel="stylesheet"
@@ -16,53 +16,284 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- #region Header -->
     <header>
-      <div class="container">
-        <aside>
-          <img
-            src="./images/my-photo.jpg"
-            alt="photo Eduard"
-            width="264"
-            height="260"
-            class="profile-picture"
-          />
-          <h2 class="prodession-title">Front-End Developer</h2>
-          <div class="contact-container">
-            <h2 class="contact-title">Contacts</h2>
-            <ul class="nav-list">
-              <li class="nav-item"><a href="" class="nav-link"></a></li>
-              <li class="nav-item"><a href="" class="nav-link"></a></li>
-              <li class="nav-item"><a href="" class="nav-link"></a></li>
-              <li class="nav-item"><a href="" class="nav-link"></a></li>
-            </ul>
+      <div class="container header-container">
+        <div class="image-wrap">
+          <img class="my-photo" src="./images/my-photo.png" alt="my-photo" />
+        </div>
+        <!--About me container-->
+        <div class="about-me-container">
+          <div class="title-wrapper">
+            <h1 class="about-name">Eduard Vyskrebtsov</h1>
+            <h2 class="profession-title">Frontend developer</h2>
           </div>
-        </aside>
+
+          <div class="profile-container">
+            <h3 class="profile-title">Profile</h3>
+            <div class="profile-content">
+              Experienced telecommunications professional now focused on web
+              development. Completed six projects with JavaScript and Python,
+              including serving as a team lead. Professional background
+              includes:
+              <ul class="ptofile-list">
+                <li class="ptofile-list-item">
+                  Customization of complex monitoring systems (Alcatel, Nokia)
+                  at Vodafone
+                </li>
+                <li class="ptofile-list-item">PHP development at Bintime</li>
+              </ul>
+              Strong engineering foundation ensures technical precision in
+              development. Currently expanding full‑stack skills with Node.js.
+              Seeking to apply analytical strengths while continuing growth in
+              modern web technologies.
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- #endregion Header -->
 
-    <main>
+    <!-- #region Main -->
+    <main class="container">
       <div>
-        <ul>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-        </ul>
-      </div>
-    </main>
+        <section class="work-experience">
+          <h3 class="work-title">WORK EXPERIENCE</h3>
+          <!--company 1-->
+          <div>
+            <h4 class="work-position">
+              VoIP / Technical Support Engineer
+              <span class="company"> Miratech</span>
+            </h4>
+            <p class="work-period"><span>01/2019 - 06/2025</span></p>
+            <ul class="work-list" class="work-list">
+              <li class="work-list-item">
+                Provided technical support to Genesys customers in EMEA/APAC via
+                Salesforce tracking system.
+              </li>
+              <li class="work-list-item">
+                Ensured timely resolution of technical issues and service
+                requests.
+              </li>
+              <li class="work-list-item">
+                Analyzed system logs and SIP/URS server software to diagnose
+                problems.
+              </li>
+              <li class="work-list-item">
+                Troubleshot complex customer issues across the Genesys Voice
+                Self Service Suite.
+              </li>
+            </ul>
+            <!--company 2-->
+            <div>
+              <h4 class="work-position">
+                PHP Developer <span class="company">BINTIME</span>
+              </h4>
+              <p class="period"><span>03/2018 - 01/2019</span></p>
+              <ul class="work-list">
+                <li class="work-list-item">
+                  Developed and maintained web applications using PHP 7.2 and
+                  Yii2 framework.
+                </li>
+                <li class="work-list-item">
+                  Built syndication platform projects for online shops in
+                  Europe/USA.
+                </li>
+                <li class="work-list-item">
+                  Utilized xDebug and Composer for debugging and dependency
+                  management.
+                </li>
+                <li class="work-list-item">
+                  Contributed to the Gepard project
+                  <a href="https://gepard.io/">gepard.io</a>.
+                </li>
+              </ul>
+            </div>
+            <!--company 3-->
+            <div>
+              <h4 class="work-position">
+                DevOps Engineer <span class="company"> ZTE Ukraine</span>
+              </h4>
+              <p class="period"><span>10/2015 - 10/2017</span></p>
+              <ul class="work-list">
+                <li class="work-list-item">
+                  Automated data collection and reporting using Java Core for
+                  telecom operators (Vodafone, Kyivstar).
+                </li>
+                <li class="work-list-item">
+                  Delivered technical support and troubleshooting services to
+                  Kyivstar NOC department.
+                </li>
+              </ul>
+            </div>
+            <!--company 4-->
+            <div>
+              <h4 class="work-position">
+                Integration Engineer
+                <a class="company" href="https://www.vodafone.ua">Vodafone</a>
+              </h4>
+              <p class="period"><span>2006 - 2015</span></p>
+              <ul class="work-list">
+                <li class="work-list-item">
+                  Integrated and maintained BSS network equipment (Nokia
+                  Siemens, Alcatel‑Lucent).
+                </li>
+                <li class="work-list-item">
+                  Led software installation and upgrade projects on BSS/OSS
+                  equipment, minimizing operational impact.
+                </li>
+                <li class="work-list-item">
+                  Administered OSS platforms including OMC‑R (Alcatel) and RC
+                  (Nokia‑Siemens).
+                </li>
+                <li class="work-list-item">
+                  Performed urgent maintenance of GSM network components through
+                  OSS systems.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--projects-->
+        <h3>Projects</h3>
+        <ol>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span
+              ><b>[</b><span class="tech-name"> HTML, CSS3 </span><b>]</b></span
+            >
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span
+              ><b>[</b><span class="tech-name"> HTML, CSS3 </span><b>]</b></span
+            >
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span
+              ><b>[</b><span class="tech-name"> HTML, CSS3 </span><b>]</b></span
+            >
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span
+              ><b>[</b><span class="tech-name"> JavaScript </span><b>]</b></span
+            >
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span
+              ><b>[</b><span class="tech-name"> React.js, Node.js </span
+              ><b>]</b></span
+            >
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span><b>[</b><span class="tech-name"> Python </span><b>]</b></span>
+          </li>
+          <li>
+            <a href=""></a><span class="dots">.......................</span>
+            <span><b>[</b><span class="tech-name"> PHP </span><b>]</b></span>
+          </li>
+        </ol>
+        <!--tech skills-->
 
-    <footer></footer>
+        <div>
+          <h3>Tech skills</h3>
+          <ul>
+            <li><span>HTML5</span></li>
+            <li><span>CSS</span></li>
+            <li><span>GIT</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>React.js</span></li>
+            <li><span>Node.js</span></li>
+          </ul>
+        </div>
+
+        <!--soft skills-->
+        <div>
+          <h3>Soft skills</h3>
+          <ul>
+            <li><span>Scrum</span></li>
+            <li><span>Agile</span></li>
+            <li><span>Teamwork</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Sidebar-->
+      <aside class="sidebar">
+        <div class="contacts">
+          <h3 class="sidebar-title title-wrapper">Contacts</h3>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a href="mailto:evyskrebtsov@gmail.com" class="contact-link"
+                >evyskrebtsov@gmail.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+380504695299" class="contact-link" target="_blank"
+                >+380504695299</a
+              >
+            </li>
+            <li class="contact-item">
+              <a
+                href="https://linkedin.com/in/eduard-vyskrebtsov/"
+                class="contact-link"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="contact-item">
+              <a
+                href="https://t.me/+380504695299"
+                class="contact-link"
+                target="_blank"
+                >Telegram</a
+              >
+            </li>
+            <li class="contact-item">
+              <a
+                href="https://github.com/EddNik"
+                class="contact-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li class="contact-item">Kyiv, Ukraine</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <!-- #endregion Main -->
+
+    <!--education-->
+    <footer class="footer container">
+      <div>
+        <h2 class="about-me-title">Education</h2>
+        <h3 class="education-title">
+          Radio-Engineer
+          <span class="university-name">
+            Military Radio Engineering Academy</span
+          >
+        </h3>
+        <span class="education-time"> 1997 / Kyiv</span>
+        <h3 class="education-title">
+          Programming Engineer
+          <span class="university-name">
+            Interregional Academy of Personnel Management</span
+          >
+        </h3>
+        <span class="education-time"> 2015 / Kyiv</span>
+      </div>
+    </footer>
   </body>
 </html>

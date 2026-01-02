@@ -8,8 +8,11 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 # Temp
-webstuduo.css
-css/styles_old.css
+.gitignore
+
+# Editor directories and files
+.idea
+.vscode/*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
