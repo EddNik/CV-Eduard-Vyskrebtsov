@@ -64,7 +64,7 @@ body {
   overflow-x: hidden;
   margin: 8px;
 
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* Makes font crisp in Chrome/Safari */
   -webkit-font-smoothing: antialiased;
 
