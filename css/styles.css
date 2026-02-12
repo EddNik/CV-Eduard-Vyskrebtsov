@@ -64,7 +64,7 @@ body {
   overflow-x: hidden;
   margin: 8px;
 
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* Makes font crisp in Chrome/Safari */
   -webkit-font-smoothing: antialiased;
 
@@ -74,7 +74,7 @@ body {
 
 .container {
   max-width: 1220px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin: 0 auto;
 }
 
@@ -183,7 +183,9 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+
+  align-items: stretch;
   gap: 40px;
   min-height: 460mm;
   margin: 0 auto;
@@ -244,8 +246,9 @@ main > div {
   flex-shrink: 0;
   min-height: 100%;
   padding: 10px 0;
-  box-shadow: 0 0 0 1000px var(--header-bg-color);
-  clip-path: inset(0 0 0 -15px);
+  background-color: var(--header-bg-color);
+  /* box-shadow: 0 0 0 1000px var(--header-bg-color);
+  clip-path: inset(0 0 0 -15px); */
   color: var(--sidebar-color);
 }
 
@@ -258,8 +261,8 @@ main > div {
 .sidebar-title::after {
   content: '';
   position: absolute;
-  left: 0;
-  width: calc(100% - 10px);
+  left: 10px;
+  width: calc(100% - 20px);
   height: 1px;
   bottom: 0;
   background-color: var(--sidebar-color);
