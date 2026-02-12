@@ -35,7 +35,9 @@ a {
 a:hover {
   font-weight: 500;
   font-size: calc(1em * 1.1);
-  transition: font-size 0.2s ease, font-weight 0.2s ease;
+  transition:
+    font-size 0.2s ease,
+    font-weight 0.2s ease;
 }
 
 p span {
@@ -256,7 +258,7 @@ main > div {
 }
 
 .sidebar-title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 /* .contact-title {
@@ -267,6 +269,19 @@ main > div {
 }
 
 .contact-list {
-  margin-left: 40px;
+  list-style: none;
+  margin-left: 20px;
   line-height: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
