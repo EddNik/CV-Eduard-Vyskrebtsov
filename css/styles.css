@@ -63,7 +63,6 @@ body {
   font-style: normal;
   overflow-x: hidden;
   margin: 8px;
-  display: block;
 }
 
 .container {
@@ -98,16 +97,6 @@ h1 {
   gap: 50px;
 }
 
-/* .header-container::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  width: 1128px;
-  height: 2px;
-  margin: 0 auto;
-  bottom: -5px;
-  background-color: rgba(0, 0, 0, 0.2);
-} */
 /* header */
 .image-wrap {
   position: relative;
@@ -146,10 +135,6 @@ h1 {
   display: block;
 }
 
-.title-wrapper {
-  text-align: center;
-  text-transform: uppercase;
-}
 .about-name {
   color: var(--header-color);
 }
@@ -184,8 +169,8 @@ h1 {
 .ptofile-list-item {
   font-weight: 500;
 }
-/* main */
 
+/* main */
 main {
   background-color: var(--main-bg-color);
   display: flex;
@@ -198,6 +183,7 @@ main {
   transform-origin: top left;
   margin: 0 auto;
 }
+
 main > div {
   flex-grow: 1;
   padding: 10px 15px;
@@ -205,13 +191,13 @@ main > div {
 
 .work-experience {
   padding-top: 5px;
-  /* background-color: var(--main-bg-color); */
 }
 
 .work-title {
   position: relative;
   margin-bottom: 20px;
 }
+
 .work-title::after {
   content: '';
   position: absolute;
@@ -245,7 +231,6 @@ main > div {
 
 /* sidebar */
 .sidebar {
-  position: relative;
   z-index: 1;
   width: 330px;
   background-color: var(--header-bg-color);
@@ -258,23 +243,39 @@ main > div {
 }
 
 .sidebar-title {
-  /* margin-left: 40px; */
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* .contact-title {
-  margin-left: 14px;
-} */
+.sidebar-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: calc(100% - 10px);
+  height: 1px;
+  bottom: 0;
+  background-color: var(--sidebar-color);
+}
+
 .contact-container {
   margin-top: 10px;
 }
 
-.contact-list {
+.contact-list,
+.skills-list {
   list-style: none;
-  margin-left: 20px;
+  margin: 20px;
   line-height: 30px;
 }
 
-.contact-item {
+.skills-list {
+  margin-left: 40px;
+  list-style: disc;
+}
+
+.contact-item,
+.skills-item {
   display: flex;
   gap: 10px;
   align-items: center;
