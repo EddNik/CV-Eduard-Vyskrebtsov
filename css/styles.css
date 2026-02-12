@@ -63,6 +63,13 @@ body {
   font-style: normal;
   overflow-x: hidden;
   margin: 8px;
+
+  overflow-x: hidden;
+  /* Makes font crisp in Chrome/Safari */
+  -webkit-font-smoothing: antialiased;
+
+  /* Makes font crisp in Firefox */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
