@@ -183,7 +183,6 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  /* align-items: flex-start; */
 
   align-items: stretch;
   gap: 40px;
@@ -202,12 +201,22 @@ main > div {
   padding-top: 5px;
 }
 
-.work-title {
-  position: relative;
-  margin-bottom: 20px;
+.project-experience,
+.education {
+  margin-top: 10px;
 }
 
-.work-title::after {
+.work-title,
+.project-title,
+.education-title {
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.work-title::after,
+.project-title::after,
+.education-title::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -229,13 +238,36 @@ main > div {
   color: #858484;
 }
 
-.work-list {
+.work-list,
+.project-list {
   padding: 0;
   margin-left: 15px;
 }
 
-.work-list-item {
+.project-list {
+  list-style-type: decimal;
+}
+
+.work-list-item,
+.project-item,
+.education-item {
   line-height: 1.4;
+}
+
+.education-list {
+  list-style-type: circle;
+}
+
+.education-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 10px;
+}
+
+.time-period {
+  width: 100%;
+  margin-top: 4px;
 }
 
 /* sidebar */
