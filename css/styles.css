@@ -3,7 +3,8 @@
   --main-bg-color: #f5f4f4;
   --header-bg-color: rgb(113, 112, 117);
   --primary-bg: #fff;
-  --accent-color: #d69172;
+  /* --accent-color: #d69172; */
+  --accent-color: #e65f23;
   --header-color: #fff;
   --sidebar-color: #fff;
 }
@@ -32,25 +33,25 @@ a {
   color: #222;
 }
 
-a:hover {
+/* a:hover {
   font-weight: 500;
   font-size: calc(1em * 1.1);
   transition:
     font-size 0.2s ease,
     font-weight 0.2s ease;
-}
-
-p span {
-  margin-left: 20px;
-}
+} */
 
 .contact-link {
   color: var(--sidebar-color);
 }
 
 .contact-link:hover {
-  padding: 5px 0;
   color: var(--accent-color);
+  font-size: calc(1em * 1.1);
+  transition:
+    color 0.2s ease,
+    font-size 0.2s ease,
+    font-weight 0.2s ease;
 }
 
 body {
@@ -74,7 +75,6 @@ body {
 
 .container {
   max-width: 1220px;
-  /* padding: 0 15px; */
   margin: 0 auto;
 }
 
@@ -229,17 +229,26 @@ main > div {
 .work-position {
   margin-top: 7px;
 }
-.company {
+.company,
+.university,
+.project-link {
   color: var(--accent-color);
 }
 
-.work-period {
+.gepard {
+  text-decoration: underline;
+}
+
+.period {
   font-size: 12px;
-  color: #858484;
+  width: 100%;
+  margin-top: 4px;
+  opacity: 0.7;
 }
 
 .work-list,
-.project-list {
+.project-list,
+.education-list {
   padding: 0;
   margin-left: 15px;
 }
@@ -263,11 +272,6 @@ main > div {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0 10px;
-}
-
-.time-period {
-  width: 100%;
-  margin-top: 4px;
 }
 
 /* sidebar */
@@ -328,3 +332,37 @@ main > div {
   height: 20px;
   fill: #fff;
 }
+
+/* projects */
+
+.project-item {
+}
+
+.project-name {
+  font-weight: 700;
+}
+
+.project-link.project-name:hover {
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: underline;
+  transform: scale(1.05);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-git {
+  margin-left: 10px;
+}
+
+.project-git:hover,
+.gepard:hover {
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: underline;
+  font-size: 1em;
+  transition: color 0.2s ease;
+}
+
+/* educaton */
